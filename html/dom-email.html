@@ -1,0 +1,30 @@
+<html>
+
+     <head>
+         <title>
+         	E-mail Validation
+         </title>
+         <script>
+         	function validate_email()
+         	{
+         		var x=document.forms["myform"]["email"].value;
+         		 var at = x.indexOf("@");
+    			var dot = x.lastIndexOf(".");
+    			if (at < 1 || dot < at + 2 || dot + 2 >= x.length)
+    		    {
+			        alert("Not a valid e-mail address");
+			        return false;
+         	    } 
+         	    else
+         	    	alert("valid email")
+         	 }
+         </script>
+     </head>
+<body> 
+	<form name="myform">
+	Enter Your E-mail ID : <input type="text" name="email"><br><br>
+
+	<input type="submit" value="submit" onClick="validate_email()">
+</form>	
+</body>
+</html>

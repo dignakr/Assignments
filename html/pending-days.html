@@ -1,0 +1,38 @@
+<html>
+
+     <head>
+         <title>
+         	pending days
+         </title> 
+
+     <script>
+     	  /*var minutes = 1000*60;
+            var hours = minutes*60;
+            var days = hours*24;
+
+            var start = getDateFromFormat("06/01/2017", "M/d/y");
+            var end = getDateFromFormat("12/31/2017", "M/d/y");
+
+            var diff_date = Math.round((end - start)/days);
+            alert("Diff date is: " + diff_date );*/
+
+   //          start = Math.floor( date1.getTime() / (3600*24*1000)); //days as integer from..
+   //           alert("hello");
+			// end   = Math.floor( date2.getTime() / (3600*24*1000)); //days as integer from..
+			// alert("hello");
+			// alert(end - start);
+
+var now = new Date();
+var start = new Date(now.getFullYear(), 0, 0);
+var diff = now - start;
+var oneDay = 1000 * 60 * 60 * 24;
+var day = Math.floor(diff / oneDay);
+alert('Day of year: ' + day);
+
+     </script>
+</head>
+     <body>
+
+     </body>
+     </html>
+

@@ -1,0 +1,39 @@
+<html>
+
+     <head>
+         <title>
+         	step down
+         </title> 
+
+    	 <script>
+
+    	 	var x=0;
+    	 	function show()
+    	 	{	
+    	 		if (x==0) 
+    	 		{
+    	 		 	x =  document.getElementById("mynum").value;
+    	 		}
+		    	 		
+		    	 document.getElementById("num").innerHTML =  --x ;
+		    	 if(c==0)
+		    	 {
+		    	 	clearInterval(myTimer);
+		    	 }		
+    	 	      
+    	 	   
+    	 	}
+    	 	
+    	 		
+
+     	</script>
+     </head>
+
+ <body>
+ 	<input type="number" id="mynum">&nbsp;&nbsp;&nbsp;&nbsp;<label id="num"></label><br><br>
+ 	
+ 	<input type="button" value="start" onClick="myTimer=setInterval(show,1000)">
+ 	<input type="button" value="stop" onClick="clearInterval(myTimer)">
+
+ </body>
+ </html>

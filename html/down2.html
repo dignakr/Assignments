@@ -1,0 +1,49 @@
+<html>
+
+     <head>
+         <title>
+         	step down
+         </title> 
+
+    	 <script>
+
+    	 	var x;
+            var repeat=0;
+    	 	function show()
+    	 	{	
+    	 		if (repeat==0) 
+    	 		{
+    	 		 x = prompt("Enter a value");
+                 repeat=1;
+    	 		}
+		    	 if(x >= 0)
+                 {
+                   document.getElementById("num").innerHTML = x ; 
+                 }		
+		    	 x--;
+               
+		    	 if(x < -1)
+		    	 {
+                    clearInterval(myTimer);
+		    	 	alert("time expired");
+                    x=0;
+                    repeat=0;
+		    	 }		
+    	 	      
+    	 	   
+    	 	}
+    	 	
+    	 		
+
+     	</script>
+     </head>
+
+ <body>
+ 	
+    <label id="num"></label><br><br>
+ 	
+ 	<input type="button" value="start" onClick="myTimer=setInterval(show,1000)">
+ 	
+
+ </body>
+ </html>
