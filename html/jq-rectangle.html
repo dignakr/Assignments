@@ -1,0 +1,42 @@
+<html>
+<head>
+	
+<title>jq animate</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+
+<script>
+	// $('.right').click(function(e){
+	// 	e.preventDefault();
+	// 	$('#d').css({'right':'0px','left':""}).animate({
+	// 		'right':'30px'
+	// 	});
+	// });
+
+	// $('.left').click(function(e){
+	// 	e.preventDefault();
+	// 	$('#d').css({'right':"",'left':'0px'}).animate({
+	// 		'left':'30px'
+	// 	});
+	// });
+     $(document).ready(function(){
+     	$(".bt1").click(function(){
+     		$("#d").animate({right:"+=900px"});
+     	});
+     	$(".bt2").click(function(){
+     		$("#d").animate({right:"0"});
+     	});
+
+     });
+</script>
+</head>
+<body>
+	<!-- <a href="" class="left">Left</a>
+	<a href="" class="right">Right</a> -->
+<button class="bt1">Left</button>
+<button class="bt2">Right</button>
+	<br><br><br>
+
+	<div id="d" style="background:red;width:200px;height:100px;position:absolute"></div>
+</body>
+</html>

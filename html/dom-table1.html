@@ -1,0 +1,63 @@
+<html>
+<head>
+	<title>Employee Table </title>
+	<STYLE TYPE="text/css">
+	table,th,td
+	{
+		border: 1px solid black;
+	}
+	</STYLE>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+
+	<script>
+			function CreateMultiArray()
+			{
+				alert("hai");
+				MultiArray= new MultiArray(2)
+				MultiArray[0]= new Array(2)
+				MultiArray[0][0]="1001"
+				MultiArray[0][1]="job"
+				MultiArray[0][2]="manager"
+
+				MultiArray= new MultiArray(2)
+				MultiArray[1]= new Array(2)
+				MultiArray[1][0]="1002"
+				MultiArray[1][1]="jack"
+				MultiArray[1][2]="employee"
+
+				MultiArray= new MultiArray(2)
+				MultiArray[2]= new Array(2)
+				MultiArray[2][0]="1003"
+				MultiArray[2][1]="james"
+				MultiArray[2][2]="programer"
+			
+					
+			if(id==as)
+            {
+        	var i=0;
+        	var j;
+        	  for(j=0;j<3;j++)
+        	  {
+
+        	  	document.getElementById("demo").innerHTML=MultiArray[i][j];
+       	      }
+    	    }
+		}
+	</script>
+</head>
+	<body>
+
+		<label id="d"></label>
+		<p id="demo"></p>
+		<select>
+       		<option value="">Choose ID</option>
+       	    <option value="1" id="as">1001</option>
+       	    <option value="2">1002</option>
+  		    <option value="3">1003</option>       				
+        </select>
+        	<input type="submit" value="submit" onClick="CreateMultiArray()">
+       
+	</body>
+	</html>

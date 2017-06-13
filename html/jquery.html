@@ -1,0 +1,28 @@
+<html>
+<head>
+	<STYLE TYPE="text/css">
+	table,th,td
+	{
+		border: 1px solid black;
+	}
+	</STYLE>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+	</script>
+
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			$("#myDiv").load("baabtrareg1.html");
+		});
+	});
+</script>
+
+</head>
+<body>
+	<h2>load ajax by using jquery</h2>
+	<h3>load html page easily by using jQuery</h3>
+	<div id="myDiv"></div>
+	<button type="button" name="button">load baabtrareg1.html</button>
+</body>
+</html>
